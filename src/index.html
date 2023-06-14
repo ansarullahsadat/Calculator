@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/dist/output.css" />
+    <script defer src="script.js"></script>
+    <title>Calculator</title>
+  </head>
+  <body class="bg-slate-100 flex justify-center items-center min-h-screen py-2">
+    <div class="bg-black w-[19rem] h-[32rem] py-2 px-4 sm:px-6 rounded-lg">
+      <input
+        type="text"
+        class="w-full bg-transparent text-slate-200 p-2 h-20 display"
+        name=""
+        id=""
+      />
+
+      <p class="sum text-slate-400 mb-4 text-right"></p>
+
+      <div
+        class="text-green-500 border-b border-slate-500 pb-4 flex items-center justify-end"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-5 h-5 cursor-pointer"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M12 9.75L14.25 12m0 0l2.25 2.25M14.25 12l2.25-2.25M14.25 12L12 14.25m-2.58 4.92l-6.375-6.375a1.125 1.125 0 010-1.59L9.42 4.83c.211-.211.498-.33.796-.33H19.5a2.25 2.25 0 012.25 2.25v10.5a2.25 2.25 0 01-2.25 2.25h-9.284c-.298 0-.585-.119-.796-.33z"
+          />
+        </svg>
+      </div>
+
+      <div
+        class="flex items-center justify-center gap-2 flex-wrap mt-4 text-xl number-content"
+      >
+        <span
+          data-tab="c"
+          class="text-red-400 w-14 h-14 rounded-full bg-slate-800/70 flex items-center justify-center cursor-pointer button"
+          >C</span
+        >
+        <span
+          data-tab="( )"
+          class="text-green-500 w-14 h-14 rounded-full bg-slate-800/70 flex items-center justify-center cursor-pointer button"
+          >( )</span
+        >
+        <span
+          data-tab="%"
+          class="text-green-500 w-14 h-14 rounded-full bg-slate-800/70 flex items-center justify-center cursor-pointer button"
+          >%</span
+        >
+        <span
+          data-tab="/"
+          class="text-green-500 w-14 h-14 rounded-full bg-slate-800/70 flex items-center justify-center cursor-pointer button"
+          >/</span
+        >
+        <span
+          data-tab="7"
+          class="text-slate-200 w-14 h-14 rounded-full bg-slate-800/70 flex items-center justify-center cursor-pointer button"
+          >7</span
+        >
+        <span
+          data-tab="8"
+          class="text-slate-200 w-14 h-14 rounded-full bg-slate-800/70 flex items-center justify-center cursor-pointer button"
+          >8</span
+        >
+        <span
+          data-tab="9"
+          class="text-slate-200 w-14 h-14 rounded-full bg-slate-800/70 flex items-center justify-center cursor-pointer button"
+          >9</span
+        >
+        <span
+          data-tab="*"
+          class="text-green-500 w-14 h-14 rounded-full bg-slate-800/70 flex items-center justify-center cursor-pointer button"
+          >*</span
+        >
+        <span
+          data-tab="4"
+          class="text-slate-200 w-14 h-14 rounded-full bg-slate-800/70 flex items-center justify-center cursor-pointer button"
+          >4</span
+        >
+        <span
+          data-tab="5"
+          class="text-slate-200 w-14 h-14 rounded-full bg-slate-800/70 flex items-center justify-center cursor-pointer button"
+          >5</span
+        >
+        <span
+          data-tab="6"
+          class="text-slate-200 w-14 h-14 rounded-full bg-slate-800/70 flex items-center justify-center cursor-pointer button"
+          >6</span
+        >
+        <span
+          data-tab="-"
+          class="text-green-500 w-14 h-14 rounded-full bg-slate-800/70 flex items-center justify-center cursor-pointer button"
+          >-</span
+        >
+        <span
+          data-tab="3"
+          class="text-slate-200 w-14 h-14 rounded-full bg-slate-800/70 flex items-center justify-center cursor-pointer button"
+          >3</span
+        >
+        <span
+          data-tab="2"
+          class="text-slate-200 w-14 h-14 rounded-full bg-slate-800/70 flex items-center justify-center cursor-pointer button"
+          >2</span
+        >
+        <span
+          data-tab="1"
+          class="text-slate-200 w-14 h-14 rounded-full bg-slate-800/70 flex items-center justify-center cursor-pointer button"
+          >1</span
+        >
+        <span
+          data-tab="+"
+          class="text-green-500 w-14 h-14 rounded-full bg-slate-800/70 flex items-center justify-center cursor-pointer button"
+          >+</span
+        >
+        <span
+          data-tab="+/-"
+          class="text-slate-200 w-14 h-14 rounded-full bg-slate-800/70 flex items-center justify-center cursor-pointer button"
+          >+/-</span
+        >
+        <span
+          data-tab="0"
+          class="text-slate-200 w-14 h-14 rounded-full bg-slate-800/70 flex items-center justify-center cursor-pointer button"
+          >0</span
+        >
+        <span
+          data-tab="."
+          class="text-slate-200 w-14 h-14 rounded-full bg-slate-800/70 flex items-center justify-center cursor-pointer button"
+          >.</span
+        >
+        <span
+          data-tab="="
+          class="bg-green-600 w-14 h-14 rounded-full text-white flex items-center justify-center cursor-pointer button"
+          >=</span
+        >
+      </div>
+    </div>
+  </body>
+</html>
